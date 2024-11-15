@@ -34,7 +34,7 @@ commands.forEach((c) => {
 const customCommands = ["clear", "dark", "light", "get cv"];
 commandsList = commandsList.concat(customCommands);
 
-// Eyster eggs' commands not available for autocompletion
+// Easter eggs' commands not available for autocompletion
 const hiddenCommands = ["pif", "rm -rf /", "hohoho", "boo"];
 
 // Added the ability to move the window for PCs

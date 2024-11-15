@@ -3,32 +3,33 @@
     "command": "help",
     "responseType": "list",
     "value": [
-      "<code>about</code> : Displays information about me",
-      "<code>clear</code> : Clear terminal",
-      "<code>experiences</code> : Display the list of my professional experiences",
-      "<code>get cv</code> : Download CV",
-      "<code>help</code> : Display help",
-      "<code>hobbies</code> : Display the list of my hobbies",
+      "<code>whoami</code> : gets information about me",
+      "<code>experiences1</code> : lists my experiences in France",
+      "<code>experiences2</code> : lists my professional abroad",      
+      "<code>education</code> : displays education and trainings",
+      "<code>hobbies</code> : lists my hobbies",
       //"<code>projects</code> : Display the list of my personal projects",
-      "<code>dark/light</code> : Change theme",
-      "<em>You can use the TAB key to complete a command</em>",
-      "<em>You can find old commands with the up and down arrows.</em>"
+      "<code>get cv</code> : downloads my resume",
+      "<code>help</code> : displays command list",
+      "<code>dark/light</code> : changes theme",
+      "<code>clear</code> : clears terminal",
+      "<em>Press TAB key to autocomplete commands. Press up and down arrows to go through previously used commands.</em>"
     ]
   },
   {
-    "command": "about",
-    "responseType": "code",
+    "command": "whoami",
+    "responseType": "list",
     "value": [
-      "{",
-      "   \"name\" : \"Renaud Gallego\",",
-      "   \"poste\" : \"Software Test Engineer\",",
-      "   \"experience\" : \"16 years\",",
-      "   \"city\" : \"Nantes, France\"",
-      "}"
+      "Name : Renaud Gallego",
+      "Job : Software Test Engineer",
+      "Experience : 19 years",
+      "City : Nantes, France",
+      "Native language : French",
+      "Business Language: English"
     ]
   },
   {
-    "command": "experiences",
+    "command": "experiences1",
     "responseType": "table",
     "headers": [
       "Date",
@@ -40,32 +41,62 @@
       [
         "08/2024<br/><br/>Now",
         "SII<br/>Desoutter<br/>Validation",
-        "Validation testing of software and firmwares of tightenings tools used in industrial fields such as aeronautics and automative",
+        "Validation testing of software and firmwares of tightenings tools used in industrial fields such as aeronautics and automative.",
         "Jenkins<br/>Spiratest<br/>Redmine"
-      ],
-      [
-        "06/2024<br/><br/>07/2024",
-        "SII<br/>Kolabee",
-        "Webui testing of ecoglan.fr for the community organization called Solidarifood",
-        "Selenium<br/>Robotframework"
       ],
       [
         "01/2023<br/><br/>05/2024",
         "SII<br/>Bouygues<br/>DSI PRECIS<br/>Serv ISIS",
-        "Testing of the real time part of UTAH project involving the revamp of the AAA system (authentication, authorization, accounting) for Internet boxes to handle RADIUS and DHCP protocols",
+        "Testing of the real time part of UTAH project involving the revamp of the AAA system (authentication, authorization, accounting) for Internet boxes to handle RADIUS and DHCP protocols.",
         "Jira<br/>Xray<br/>Robotframework<br/>Postman"
       ],
       [
         "05/2022<br/><br/>12/2022",
         "SII<br/>Avancial<br/>IV Transil",
-        "Testing of new features and fixes across three scopes: EIFFEL (service monitoring and supervision), API Confort (crowd estimation and display), and ALMA (audio broadcasting and information display at stations)",
+        "Testing of new features and fixes across three scopes: EIFFEL (service monitoring and supervision), API Confort (crowd estimation and display), and ALMA (audio broadcasting and information display at stations).",
         "Jenkins<br/>Xray<br/>Datadog<br/>Postman"
       ],
       [
         "07/2020<br/><br/>06/2022",
         "SII<br/>Orange<br/>OBS",
-        "Ensure the quality of new features added to Orange’s mobile billing payment services for Internet, mobile, and xMS transactions",
+        "Testing new features and improvements added to Orange’s mobile billing payment services for Internet, mobile, and xMS transactions.",
         "Jenkins<br/>Robotframework<br/>Postman"
+      ],
+      [
+        "05/2019<br/><br/>06/2020",
+        "Accenture<br/>Bouygues",
+        "Testing new features added to the service platforms within the context of TV broadcasting managed by Bouygues Telecom.",
+        "HP ALM<br/>SoapUI"
+      ]
+    ]
+  },
+  {
+    "command": "experiences2",
+    "responseType": "table",
+    "headers": [
+      "Date",
+      "Client",
+      "Description",
+      "Tech"
+    ],
+    "rows": [
+      [
+        "10/2012<br/>08/2017",
+        "CT GmbH<br/>Management<br/>Germany",
+        "Ensured the coordination of translation and testing teams. Our goal was to provide high quality localised assets of game franchises (game text, scripts for audio recording, marketing assets). Our main clients were Nintendo, Microsoft, Square Enix, Codemasters or Blizzard.",
+        "Jira<br/>Mantis<br/>MemoQ<br/>SDLTrados"
+      ],
+      [
+        "03/2011<br/>09/2012",
+        "CT GmbH<br/>Coordination<br/>Germany",
+        "Coordination of the testing teams : English, French, Italian, German and Spanish. Our goal was to check the quality of localised assets of games. Translations were done by our in-house translation teams.",
+        "Jira<br/>Mantis<br/>MemoQ<br/>SDLTrados"
+      ],
+      [
+        "06/2005<br/>02/2011",
+        "Nintendo<br/>Lead tester<br/>Germany",
+        "Ensure the quality of localization/translation for franchises published by Nintendo of Europe. Bug reporting and management of French team.",
+        "Jira<br/>Mantis<br/>MemoQ<br/>SDLTrados"
       ]
     ]
   },
@@ -73,11 +104,50 @@
     "command": "hobbies",
     "responseType": "list",
     "value": [
-      "Sport: Bikepacking, Fitness",
-      "Programmation: Python",
-      "Other: Crowdlending, Cinema, Gaming"
+      "Sport : Bikepacking, Fitness",
+      "Programming : Python",
+      "Languages of interest : Spanish, German",
+      "Driving licenses : Car and bike",
+      "Other : Investment, Cinema, Gaming"
     ]
   },
+  {
+    "command": "education",
+    "responseType": "table",
+    "headers": [
+      "Date",
+      "School",
+      "Description"
+    ],
+    "rows": [
+      [
+        "2023",
+        "Orsys<br/>Nantes",
+        "Automatisation Robotframework / Selenium"
+      ],
+      [
+        "2021",
+        "Certilog<br/>Nantes",
+        "Automated software testing"
+      ],
+      [
+        "2019",
+        "ENI<br/>Nantes",
+        "ISTQB Foundation Certification"
+      ],
+      [
+        "2003",
+        "IUP<br/>Lorient",
+        "Diplôme d'Ingénieur-Maître Génie Électrique et Informatique Industrielle",
+      ],
+      [
+        "2000",
+        "IUT<br/>Rennes",
+        "DUT Génie Électrique et Informatique Industrielle"
+      ]
+    ]
+  } 
+  ,
   {
     "command": "projects",
     "responseType": "table",
