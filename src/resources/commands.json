@@ -5,10 +5,9 @@
     "value": [
       "<code>whoami</code> : gets information about me",
       "<code>experiences1</code> : lists my experiences in France",
-      "<code>experiences2</code> : lists my professional abroad",      
+      "<code>experiences2</code> : lists my experiences abroad",      
       "<code>education</code> : displays education and trainings",
       "<code>hobbies</code> : lists my hobbies",
-      //"<code>projects</code> : Display the list of my personal projects",
       "<code>get cv</code> : downloads my resume",
       "<code>help</code> : displays command list",
       "<code>dark/light</code> : changes theme",
@@ -83,7 +82,7 @@
       [
         "10/2012<br/>08/2017",
         "CT GmbH<br/>Management<br/>Germany",
-        "Ensured the coordination of translation and testing teams. Our goal was to provide high quality localised assets of game franchises (game text, scripts for audio recording, marketing assets). Our main clients were Nintendo, Microsoft, Square Enix, Codemasters or Blizzard.",
+        "Ensured the coordination of translation and testing teams. Our goal was to provide high quality localised assets of game franchises (game text, scripts for audio recording, marketing assets). Our main clients were Nintendo, Microsoft, Square Enix, Codemasters and Blizzard.",
         "Jira<br/>Mantis<br/>MemoQ<br/>SDLTrados"
       ],
       [
@@ -96,7 +95,7 @@
         "06/2005<br/>02/2011",
         "Nintendo<br/>Lead tester<br/>Germany",
         "Ensure the quality of localization/translation for franchises published by Nintendo of Europe. Bug reporting and management of French team.",
-        "Jira<br/>Mantis<br/>MemoQ<br/>SDLTrados"
+        "Jira<br/>Mantis"
       ]
     ]
   },
@@ -138,7 +137,7 @@
       [
         "2003",
         "IUP<br/>Lorient",
-        "Diplôme d'Ingénieur-Maître Génie Électrique et Informatique Industrielle",
+        "Diplôme d'Ingénieur-Maître Génie Électrique et Informatique Industrielle"
       ],
       [
         "2000",
